@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.print-area{
+    width: 80%;
+    margin: 20px auto;
+    padding-bottom: 20px;
+}
+
+.print-area .header{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(31, 34, 43);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 130px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, .5);
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+    filter: grayscale(100%);
+    z-index: 1
+
+}
+
+.header img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 20px rgb(0, 0, 0, .5);
+
+}
+.header-text{
+    color: white;
+    width: 60%;
+    margin-left: auto;
+
+}
+
+.header-text h1{
+    font-size: 80px;
+    font-weight: normal;
+
+    
+}
+
+.header-text p{
+    font-size: 20px;
+    color: lightgray;
+    
+    
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-area{
+    width: 30%;
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+    padding-bottom: 40px;
+
+}
+.left-area .contact{
+    margin-top: 125px;
+    padding: 0 30px;
+
+}
+
+.contact h4{
+    font-size: 30px;
+    font-weight: normal;
+    margin: 20px 0;
+
+}
+
+.contact h5{
+    font-size: 18px;
+    margin: 5px 0;
+}
+.contact p{
+    font-size: 17px;
+
+
+}
+.skills{
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.skills h1{
+    font-size: 30px;
+    font-weight: normal;
+}
+.bars{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px 10px;
+    padding: 0 20px;
+}
+.bars .bar p{
+    font-size: 15px;
+    font-weight: bold;
+
+
+}
+.bars .bar1 span{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(192, 191, 191);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.bars .bar1 span:before{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+
+}
+.bars .bar2 span{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(192, 191, 191);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.bars .bar2 span:before{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+
+}
+
+.bars .bar3 span{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(192, 191, 191);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.bars .bar3 span:before{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+
+}
+
+.bars .bar4 span{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(192, 191, 191);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.bars .bar4 span:before{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+
+}
+.bars .bar5 span{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(192, 191, 191);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.bars .bar5 span:before{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+
+}
+
+.bars .bar6 span{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(192, 191, 191);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.bars .bar6 span:before{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+
+}
+
+.bars .bar7 span{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(192, 191, 191);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.bars .bar7 span:before{
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+
+}
+
+.follow{
+    margin-top: 35px;
+}
+.follow h1{
+    font-size: 30px;
+    font-weight: normal;
+}
+.follow h4{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.follow p{
+    font-size: 15px;
+    color: rgb(96, 97, 97);
+
+}
+.right-area{
+    width: 70%;
+    padding: 50px;
+}
+
+
+.left-area {
+    width: 30%;
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+    padding-bottom: 40px;
+    height: calc(100vh - 60px); /* Adjust the height as needed */
+    overflow-y: auto;
+    position: sticky;
+    top: 60px; /* Adjust the top offset as needed */
+}
+
+
+.right-area h1{
+    font-size: 40px;
+    font-weight: normal;
+
+}
+.right-area .about h1 span{
+    margin-right: 30px;
+    font-size: 50px;
+    color: rgb(192, 191, 191);
+}
+.right-area .about p{
+    padding-left: 86px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 17px;
+    color: rgb(96, 97, 97);
+    margin-top: 10px;
+
+}
+
+.right-area .work h1 span{
+    margin-right: 30px;
+    font-size: 50px;
+    color: rgb(192, 191, 191);
+}
+.right-area .work p{
+    padding-left: 86px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 17px;
+    color: rgb(96, 97, 97);
+    margin-top: 10px;
+
+}
+.right-area .education h1 span{
+    margin-right: 30px;
+    font-size: 50px;
+    color: rgb(192, 191, 191);
+}
+.right-area .education p{
+    padding-left: 86px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 17px;
+    color: rgb(96, 97, 97);
+    margin-top: 10px;
+
+}
+.right-area .work .work-group{
+    position: relative;
+
+}
+.about{
+    margin: 30px 0;
+}
+
+.education{
+    margin: 30px 0;
+}
+.work-group{
+    margin: 30px 0;
+}
+.work-group h3{
+    font-size: 22px;
+    font-weight: normal;
+    padding-left: 86px;
+    color: black;
+}
+.work-group h4{
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 86px;
+    color: rgb(96, 97, 97);
+}
+.work-group span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: black;
+    font-size: 15px;
+
+}
+.edu-group{
+    margin: 10px 0;
+    position: relative;
+
+}
+.education .edu-group h4{
+    padding-left: 86px;
+    font-size: 20px;
+    font-weight: normal;
+
+}
+.education .edu-group span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: black;
+    font-size: 15px;
+}
+.education .edu-group p{
+    padding-left: 106px;
+    color: rgb(96, 97, 97);
+}
+
+.carousel-container {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent items from wrapping to the next line */
+}
+
+.carousel {
+  display: flex; /* Display items in a row */
+  padding: 10px; /* Optional padding for spacing between items */
+}
+
+.carousel-item {
+  flex: 0 0 auto; /* Don't allow items to grow or shrink */
+  max-width: 100%; /* Ensure images don't exceed their container width */
+  height: auto; /* Allow the height to adjust proportionally */
+  margin-right: 10px; /* Optional margin between items */
+  background-color: #afa7a7;
+  text-align: center;
+  /* Other styles for your items */
+}
+.course{
+    width: 400px; height: auto;  
+}
+
+
+button{
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(83,83,83);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0.5); 
+    font-size: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover{
+    background-color: black;
+    box-shadow: 0 0 20px rgba(0,0,0.5); 
+}
+
+#print{
+    margin: 1px 0 50px 220px;
+}
+#copy{
+    margin: 1px 0 50px 110px;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .print-area * {
+        visibility: visible;
+
+    }
+}
