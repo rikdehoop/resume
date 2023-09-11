@@ -318,7 +318,9 @@
 .right-area .about p{
     padding-left: 86px;
     text-align: justify;
-    word-break: break-all;
+    /* word-break: break-all; */
+    overflow-wrap: break-word;
+    hyphens: auto;
     font-size: 17px;
     color: rgb(96, 97, 97);
     margin-top: 10px;
@@ -333,7 +335,9 @@
 .right-area .work p{
     padding-left: 86px;
     text-align: justify;
-    word-break: break-all;
+    /* word-break: break-all; */
+    overflow-wrap: break-word;
+    hyphens: auto;
     font-size: 17px;
     color: rgb(96, 97, 97);
     margin-top: 10px;
@@ -347,7 +351,9 @@
 .right-area .education p{
     padding-left: 86px;
     text-align: justify;
-    word-break: break-all;
+    /* word-break: break-all; */
+    overflow-wrap: break-word;
+    hyphens: auto;
     font-size: 17px;
     color: rgb(96, 97, 97);
     margin-top: 10px;
