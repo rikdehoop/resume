@@ -1,21 +1,19 @@
 const btn = document.getElementById("print");
 
 btn.onclick = () => {
-window.alert("Generating PDF of the whole page...");
+  window.alert("Generating PDF of the whole page...");
 
-// Select the whole body to convert
-const element = document.body;
+  const element = document.body;
 
-const opt = {
-  margin:       0,
-  filename:     'webpage.pdf',
-  image:        { type: 'jpeg', quality: 0.98 },
-  html2canvas:  { scale: 2 },
-  jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
-};
+  const opt = {
+    margin:       5,
+    filename:     'webpage.pdf',
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { scale: 2, useCORS: true }, // CORS helps if you have external images
+    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+  };
 
-// Convert and save
-html2pdf().set(opt).from(element).save();
+  html2pdf().set(opt).from(element).save();
 };
 var copyText = document.getElementById("copy");
 copyText.onclick = () =>{
