@@ -489,12 +489,58 @@ button:hover{
 }
 
 @media print {
-  button {
+  body, html {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  * {
+    box-shadow: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+
+  button,
+  .carousel-container {
     display: none !important;
   }
 
-  .carousel-container {
+  .print-area {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .left-area {
+    position: static !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .carousel-container,
+  .carousel {
+    overflow: visible !important;
+    white-space: normal !important;
+    display: block !important;
+  }
+
+  .carousel-item {
+    display: inline-block !important;
+    width: 100% !important;
     page-break-inside: avoid;
+    margin-bottom: 10px;
+  }
+
+  .right-area,
+  .left-area {
+    width: 100% !important;
+    float: none !important;
+    padding: 0 20px;
+  }
+
+  .content {
+    display: block !important;
   }
 
   .work-group,
