@@ -240,7 +240,7 @@
     content: "";
     width: 80%;
     height: 80%;
-    background-color: orange;
+    background-color: darkorange;
     top: 50%;
     left: 2px;
     transform: translateY(-50%);
