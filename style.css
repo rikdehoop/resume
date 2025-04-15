@@ -216,7 +216,7 @@
 .bars .bar5 span:before{
     position: absolute;
     content: "";
-    width: 60%;
+    width: 75%;
     height: 80%;
     background-color: black;
     top: 50%;
@@ -238,7 +238,7 @@
 .bars .bar6 span:before{
     position: absolute;
     content: "";
-    width: 60%;
+    width: 80%;
     height: 80%;
     background-color: black;
     top: 50%;
@@ -260,9 +260,9 @@
 .bars .bar7 span:before{
     position: absolute;
     content: "";
-    width: 70%;
+    width: 80%;
     height: 80%;
-    background-color: black;
+    background-color: orange;
     top: 50%;
     left: 2px;
     transform: translateY(-50%);
