@@ -1,20 +1,28 @@
 const btn = document.getElementById("print");
 
 btn.onclick = () => {
-  window.alert("Generating PDF of the whole page...");
+  window.alert("Je CV wordt gegenereerd als PDF...");
 
-  const element = document.body;
+  // Hide buttons before printing
+  const buttons = document.querySelectorAll("button");
+  buttons.forEach(btn => btn.style.display = "none");
+
+  const element = document.querySelector(".print-area");
 
   const opt = {
-    margin:       5,
-    filename:     'webpage.pdf',
+    margin:       [5, 5, 5, 5], // top, left, bottom, right
+    filename:     'CV_Rik_de_Hoop.pdf',
     image:        { type: 'jpeg', quality: 0.98 },
-    html2canvas:  { scale: 2, useCORS: true }, // CORS helps if you have external images
-    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    html2canvas:  { scale: 2, useCORS: true },
+    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
   };
 
-  html2pdf().set(opt).from(element).save();
-};
+  html2pdf().set(opt).from(element).save().then(() => {
+    // Show buttons again
+    buttons.forEach(btn => btn.style.display = "inline-block");
+  });
+}
 var copyText = document.getElementById("copy");
 copyText.onclick = () =>{
     window.alert("The page has been copied to your clipboard!")
