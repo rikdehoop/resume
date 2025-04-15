@@ -489,11 +489,16 @@ button:hover{
 }
 
 @media print {
-    body * {
-        visibility: hidden;
-    }
-    .print-area * {
-        visibility: visible;
+  button {
+    display: none !important;
+  }
 
-    }
+  .carousel-container {
+    page-break-inside: avoid;
+  }
+
+  .work-group,
+  .edu-group {
+    page-break-inside: avoid;
+  }
 }
