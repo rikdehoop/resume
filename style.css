@@ -132,7 +132,7 @@
     content: "";
     width: 80%;
     height: 80%;
-    background-color: black;
+    background-color: orange;
     top: 50%;
     left: 2px;
     transform: translateY(-50%);
@@ -153,7 +153,7 @@
     content: "";
     width: 60%;
     height: 80%;
-    background-color: black;
+    background-color: darkorange;
     top: 50%;
     left: 2px;
     transform: translateY(-50%);
@@ -175,7 +175,7 @@
     content: "";
     width: 80%;
     height: 80%;
-    background-color: black;
+    background-color: orange;
     top: 50%;
     left: 2px;
     transform: translateY(-50%);
@@ -197,7 +197,7 @@
     content: "";
     width: 80%;
     height: 80%;
-    background-color: black;
+    background-color: darkorange;
     top: 50%;
     left: 2px;
     transform: translateY(-50%);
@@ -218,7 +218,7 @@
     content: "";
     width: 75%;
     height: 80%;
-    background-color: black;
+    background-color: orange;
     top: 50%;
     left: 2px;
     transform: translateY(-50%);
